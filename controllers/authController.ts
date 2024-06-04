@@ -3,9 +3,7 @@ import conn from "../config/database";
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import { logResult, login, register } from "../types/interfaces";
-// import register from '../types/interfaces'
 const saltRounds : number = 10 ;
-// require('../dotenv').config();
 
 
 export const doRegister = async (req : Request,res : Response) =>{
